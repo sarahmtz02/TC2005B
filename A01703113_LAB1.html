@@ -1,4 +1,221 @@
-<html>
+<!DOCTYPE html>
+<html lang="es-mx">
+
+
+    <head>
+        <title>LABORATORIOS SEM 1</title>
+        <link type="stylesheet" href="A01703113_LAB3.css">
+        <style>
+            body{
+                color:black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Sarah Guadalupe Martínez Navarro - A01703113</h1>
+
+        <p>
+        ¡Hola! Soy alumna del Tec de Monterrey Campus Queretaro. Me encanta bailar, leer, 
+        y estar con mis amigos. Encontré el gusto de programar cuando iba en la prepa y tuve que
+        hacer un programa con Python. No tengo mucha experiencia (conozco un poco de Python, C++, 
+        html), pero estoy dispuesta a aprender y trabajar en mejorar.
+        </p>
+
+        <p>
+        Mi compromiso con esta clase es estudiar todo lo que pueda para asegurar el conocimiento
+        y poder apoyar a mis compañeros. Me comprometo a dar mi 100 para cumplir, e incluso
+        exceder las expectativas de los profesores y socioformadores este semestre.
+        </p>
+
+        <h2>Cuestionario</h2>
+
+        <p>1. ¿Cuál es la diferencia entre Internet y la World Wide Web?</p>
+        <p>El internet es la conexión entre dispositivos (computadoras, celulares, smartwatches, 
+        etc.), mientras que la Web es la colección de sitios y páginas dentro del mismo internet. 
+        En otras palabras, utilizamos el internet (que conecta los dispositivos) para acceder a 
+        todas las páginas que hay dentro de la Web.</p>
+        
+        <br>
+        <p>2. ¿Cuáles son las partes de un URL?</p>
+        <p>- Protocolo: es el formato en el que se podrá intercambiar información entre 
+        dispositivos. Hay múltiples tipos, por ejemplo, http (HyperText Transfer Protocol) 
+        que funciona para la visualización de páginas web.</p>
+        <p>- Servidor: es el nombre de la página a la que se accede y toma en cuenta el nombre 
+        del servidor y el dominio. El dominio puede tener terminaciones técnicas como .net 
+        (network), .gob (gobierno), .com (commercial) o incluso tener terminaciones 
+        relacionadas con la región geográfica como .mx (México), .uk (United Kingdom), entre 
+        otras.</p>
+        <p>- Puerto: es un número que indica la entrada a la máquina de la que vamos a obtener 
+        la información. Suele ir de mano en mano con el protocolo. La URL no funciona si falta 
+        alguno de los 2. Sin embargo, con algunas páginas no es necesario ponerlo ya que, si 
+        tiene protocolo http, suele ir conectado al puerto 80 y se conecta 
+        automáticamente. </p>
+        <p>- Directorio: Al igual que un directorio normal, permite a la máquina saber dónde se 
+        encuentra la página que estamos buscando. Sirve para organizar las páginas y poder 
+        ubicar las que se necesitan con facilidad. ¡Es como un índice!</p>
+        <p>- Página: Contiene el contenido (valga la redundancia) de la página web. Expone 
+        concretamente lo que se encontrará en esa página en específico.</p>
+    
+        <br>
+        <p> 3.¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE? </p>
+        <p>- GET: se ocupa para recuperar un dato en específico.</p>
+        <p>- HEAD: muy similar al método GET, pero ignora el cuerpo de la respuesta.</p>
+        <p>- POST: realiza cambios de estado dentro del servidor. Se utiliza para colocar una 
+        entidad en un recurso concreto.</p>
+        <p>- PUT: reemplaza el contenido de un recurso con los datos que vienen con el comando.</p>
+        <p>- PATCH: modifica parcialmente un recurso para reemplazar con otros datos.</p>
+        <p>- DELETE: se utiliza para borrar un recurso en específico.</p>
+
+        <br>
+        <p>4. ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo 
+        cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</p>
+        <p>Para esta situación, se podría utilizar el método GET. El método GET, como se 
+        mencionó arriba, se usa para solicitar al servidor que envíe un recurso de regreso, 
+        como una respuesta, pero esta respuesta es un cuerpo vacío, lo que envía los datos a 
+        la URL y así se pueden pasar estos datos al servidor.</p>
+
+        <br>
+        <p>5. ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a 
+        una página a través de un URL?</p>
+        <p>Se podría usar el método PUT, ya que buscamos reemplazar la “página de inicio” 
+        (por ejemplo, si usamos Google Chrome, sería reemplazar la página inicial del buscador 
+        Google con la nueva URL) con la página a la que deseamos acceder.</p>
+
+        <br>
+        <p>6. Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? 
+        ¿Ocurrió algún error?</p>
+        <p>Si te encuentras como respuesta el código 200, ¡no te preocupes! No ha habido ningún 
+        error. Es sólo el código 200 OK. Quiere decir que todo se ha desarrollado correctamente 
+        y con éxito.</p>
+
+        <br>
+        <p>7. ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta 
+        que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</p>
+        <p>¡Ha ocurrido un error! Parece que el recurso que buscabas no se encuentra en el 
+        servidor. El código 404 suele asociarse con vínculos rotos o vínculos muertos, lo cual 
+        quiere decir que el recurso se ausenta de manera temporal o permanente del servidor y 
+        que el desarrollador debe echarle un vistazo a la situación.</p>
+
+        <br>
+        <p>8. ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta 
+        que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</p>   
+        <p>¡Oops! Parece que el servidor ha tenido problemas y no se puede completar tu 
+        solicitud. Usualmente ocurre cuando no se puede encontrar una mejor respuesta que 
+        arrojar, pero no ataques a tu desarrollador porque creo que no es su culpa (bueno, 
+        depende).</p>
+
+        <br>
+        <p>9. ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? 
+        Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</p>
+        <p>Los atributos a los que ya no se les consideran recomendables usar. Sea porque han 
+        sido reemplazados por otros atributos más avanzados y eficientes o simplemente porque 
+        ya no se encuentran disponibles.</p>
+        <body>HTML4: applet, dir, isindex, menu, basefront, center, font, s, strike, u.</p>
+        <p>HTML5: rev, charset, shape, coords, longdesc, target, nohref, profile, version…</p>
+
+        <br>
+        <p>10. ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</p>
+        <p>Responderé esta pregunta con un pequeño resumen de una parte del blog de Brenda 
+        Barrón (2021).</p>
+        <p>El primer detalle que ella vio fue la compatibilidad de los sitios con las diferentes 
+        etiquetas de HTML4 y HTML5. Observó que este fue un gran problema al principio, ya que 
+        los sitios con HTML4 se podían visualizar en el navegador Internet Explorer, pero 
+        fallaban cuando se abrían en navegadores más modernos, mientras que las funciones con 
+        HTML5 funcionaban y eran compatibles con muchos navegadores que se usan más comúnmente 
+        ahora.</p>
+        <p>Comenta también del avance con HTML5 con los casos de soporte multimedia, ya que es 
+        muy sencillo implementar algún archivo de sonido, imagen o video, mientras que con 
+        HTML4 se requería el uso de JavaScript.</p>
+
+        <br>
+        <p>11. ¿Qué componentes de estructura y estilo tiene una tabla?</p>
+        <p>Bueno, dirigiéndonos a los básicos, una tabla es una herramienta visual que nos ayuda 
+        a exponer información en filas y columnas dependiendo de la relación que tienen entre 
+        sí. Permite organizar datos (texto, imágenes, vínculos, entre otros). Cada tabla puede 
+        tener una pequeña descripción como encabezado explicando la información que se 
+        encuentra en ella. Cada celda es un espacio para almacenar esta información y se pueden 
+        ver como “coordenadas” para ver con qué fila y columna se relacionan.</p>
+
+        <br>
+        <p>12. ¿Cuáles son los principales controles de una forma HTML5?</p>
+        <p>- Input de texto</p>
+        <p>- Casillas de verificación y botones</p>
+        <p>- Selector de archivos</p>
+
+        <br>
+        <p>13. ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la 
+        siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta 
+        recuerda poner el navegador que utilizas)</p>
+        <p>Mi navegador de preferencia es Google Chrome y, al parecer, ¡es una buena elección! 
+        El navegador sacó 476 puntos de 555, lo cual le da una calificación de 86% total. 
+        ¡No está nada mal!</p>
+
+        <br>
+        <h2>Sobre el ciclo de vida y desarrollo de los sistemas de información:</h2>
+
+        <br>
+        <p>14. ¿Cuál es el ciclo de vida de los sistemas de información?</p>
+        <p>  1. Nacimiento</p>
+        <p>  2. Desarrollo</p>
+        <p>  3. Operación</p>
+        <p>  4. Mantenimiento</p>
+        <p>  5. Muerte</p>
+
+        <br>
+        <p>15. ¿Cuál es el ciclo de desarrollo de sistemas de información?</p>
+        <p>  1. Planificación de Concepto</p>
+        <p>  2. Definición de Requisitos</p>
+        <p>  3. Diseño</p>
+        <p>  4. Fase de desarrollo y pruebas</p>
+        <p>  5. Puesta en Marcha</p>
+        <p>  6. Operaciones y Mantenimiento</p>
+        <p>  7. Disposición</p>
+
+        <br>
+        <h2>Preguntas Laboratorio 3</h2>
+        
+        <br>
+        <p>1. Como ingeniero de software, ¿cuál es tu recomendación de !important en un CSS? </p>
+        <p>RESPUESTA</p>
+
+        <br>
+        <p>2. Si se pone una imagen de fondo en un HTML, ¿por qué debe elegirse con cuidado?</p>
+        <p>RESPUESTA</p>
+
+        <br>
+        <p>3. Como ingeniero de software, ¿cuál es tu mejor recomendación al elegir las 
+            unidades de una propiedad de estilo entre %, px y pt?</p>
+        <p>RESPUESTA</p>
+
+        <br>
+        <p>4. ¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento de tu 
+            sitio?</p>
+        <p>RESPUESTA</p>
+
+        <br>
+        <h2>REFERENCIAS</h2>
+        
+        <br>
+
+        <p>BBC NEWS (2019) ¿Cuál es la diferencia entre internet y la Web? (y por qué muchos las confunden). Recuperado el 14 Febrero del 2022 de https://www.bbc.com/mundo/noticias-47538812#:~:text=Internet%20es%20una%20inmensa%20red,para%20acceder%20a%20la%20web.</p>
+        <p>Cuervo, V. (2008) Partes de una URL. Recuperado el 14 Febrero del 2022 de https://www.ayudaenlaweb.com/internet-basico/partes-de-una-url/</p>
+        <p>Raiden. J, Soto. J, Martínez. R. (2022) Métodos de Petición HTTP. Recuperado el 14 Febrero del 2022 de https://developer.mozilla.org/es/docs/Web/HTTP/Methods</p>
+        <p>Barra. A, Barrios. G, Naven. S. (2022) 200 OK. Recuperado el 14 Febrero del 2022 de https://developer.mozilla.org/es/docs/Web/HTTP/Status/200</p>
+        <p>Noel, B. (2022) 404 Not Found. Recuperado el 14 Febrero del 2022 de https://developer.mozilla.org/es/docs/Web/HTTP/Status/404</p>
+        <p>Hernández, D. (2022) 500 Error Interno del Servidor. Recuperado el 14 Febrero del 2022 de https://developer.mozilla.org/es/docs/Web/HTTP/Status/500</p>
+        <p>Barrón, B. (2021) HTML vs HTML5: Conoce las diferencias cruciales entre ellos. Recuperado el 14 Febrero del 2022 de https://kinsta.com/es/blog/html-vs-html5/</p>
+        <p>Anon. (2017) 05. Tags y atributos desaprobados en HTML. Recuperado el 14 Febrero del 2022 de https://sites.google.com/site/dwebhtml/reference/deprecated#:~:text=Los%20tags%20y%20atributos%20desaprobados,son%20agregada%2C%20removidas%20o%20desaprobadas.</p>
+        <p>tutorialspoint. (2020) HTML5 - Deprecated Tags & Attributes. Recuperado el 14 Febrero del 2022 de https://www.tutorialspoint.com/html5/html5_deprecated_tags.htm</p>
+        <p>Anon. (2018) El ciclo SDLC en 7 fases. Recuperado el 14 Febrero del 2022 de https://www.viewnext.com/el-ciclo-sdlc-en-7-fases/page/2/</p>
+        <p>Rojas, R. (2022) Controles de formulario originales. Recuperado el 14 Febrero del 2022 de https://developer.mozilla.org/es/docs/Learn/Forms/Basic_native_form_controls</p>
+        <br>
+    
+    </body>
+
+</html>
+
+<!-- <html>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
@@ -275,4 +492,4 @@
     <br>
     <br>
 
-</html>
+</html> -->
