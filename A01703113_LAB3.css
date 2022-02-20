@@ -1,4 +1,29 @@
-h1{
+h1{font-family:Arial,Helvetica,sans-serif;color:#dc143c}h2{font-family:Arial,Helvetica,sans-serif;color:#df5b75;background-color:#fff}body{margin:0 auto;max-width:50em}#parrafo1{background-color:#eed3ea;color:#000}#parrafo2{background-color:#fff;color:#000}
+
+/*LAB 3*/
+
+/* h1{
     font-family: Arial, Helvetica, sans-serif;
     color: crimson;
 }
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #df5b75;
+    background-color: rgb(255, 255, 255);
+}
+
+body{
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+#parrafo1{
+    background-color: rgb(238, 211, 234);
+    color: black;
+}
+
+#parrafo2{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}*/
