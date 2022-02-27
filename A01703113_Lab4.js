@@ -1,3 +1,6 @@
+//Sarah Guadalupe Martínez Navarro - A01703113
+//LABORATORIO 4: Introducción a JavaScript
+
 //1: Listado de cuadrados y cubos de un número n de números
 
 //pedir un número al usuario
@@ -134,12 +137,24 @@ document.write("<br>")
 
 //exposición del orden inverso
 document.write("<h2>ORDEN INVERSO</h2>")
-document.write("<p id = parrafo1> Números del número que ingresaste hasta el 0 </p>");
+document.write("<p id = parrafo1>Números del número que ingresaste hasta el 0</p>");
 
-//mientras el valor del contador sea mayor a 0, imprimir el número Ingresado
+//mientras el valor del contador sea mayor o igual a 0, imprimir el valor del contador
 for (let i = nIngresado; i >= 0; i--) {
   document.write("<p id = parrafo2>",i,"</p>");
 }
+document.write("<br>");
 
 
 //6: Mi problema
+//imprimir la tabla de multiplicar (del 0 al 10) del número ingresado por el usuario
+document.write("<h2>TABLAS DE MULTIPLICAR</h2>")
+
+//definir variable donde se guardará el valor de las multiplicaciones
+let multi=0;
+
+//mientras el contador sea menor o igual a 10, multiplicar el número ingresado por i
+for (let i = 0; i <= 10; i++){
+    multi = i * nIngresado;
+    document.write("<p id = parrafo2>",multi,"</p>");
+}
