@@ -1,11 +1,19 @@
 //1: Listado de cuadrados y cubos de un número n de números
-/*const num = prompt("Ingrese un número: ");
-console.log(num);
-for (let i = 1; i<=num; i++){
-    console.log(i*i);
-    console.log(i*i*i);
-    i++;
-}*/
+
+//pedir un número al usuario
+const nIngresado = prompt("Ingrese un número: ");
+
+//Cuadrados: mientras que i sea menor o igual al número ingresado, multiplicar el valor de i por sí mismo
+document.write("<p id = parrafo1>Los CUADRADOS de los números del 0 al número que ingresaste son: </p>");
+for (let i = 0; i <= nIngresado; i++) {
+  document.write("<p id = parrafo2>",i*i,"</p>");
+}
+
+//Cubos: mientras que i sea menor o igual al número ingresado, multiplicar el valor de i por sí mismo 2 veces
+document.write("<p id = parrafo1>Los CUBOS de los números del 0 al numero que ingresaste son: </p>");
+for (let i = 0; i <= nIngresado; i++) {
+  document.write("<p id = parrafo2>",i*i*i,"</p>");
+}
 
 //2: Suma de 2 números aleatorios
 
@@ -66,4 +74,3 @@ contador(num);*/
 
 
 //6
-
