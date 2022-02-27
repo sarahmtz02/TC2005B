@@ -5,6 +5,12 @@ const nIngresado = prompt("Ingrese un número: ");
 
 document.write("<h2>CUADRADOS Y CUBOS</h2>");
 
+//CORRECCIÓN: listado de números del 0 al número ingresado
+document.write("<p id = parrafo1> Números del 0 al número que ingresaste: </p>");
+for (let i = 0; i <= nIngresado; i++) {
+  document.write("<p id = parrafo2>",i,"</p>");
+}
+
 //Cuadrados: mientras que i sea menor o igual al número ingresado, multiplicar el valor de i por sí mismo
 document.write("<p id = parrafo1>Los CUADRADOS de los números del 0 al número que ingresaste son: </p>");
 for (let i = 0; i <= nIngresado; i++) {
@@ -123,7 +129,8 @@ function promedio(arreglo){
 promedio(matriz);
 
 
-//5
+//5: Números en orden inverso
+
 
 
 //6
