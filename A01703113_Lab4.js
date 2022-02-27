@@ -127,10 +127,19 @@ function promedio(arreglo){
     document.write("<p id=parrafo2>",prom,"</p>")
 }
 promedio(matriz);
+document.write("<br>")
 
 
 //5: Números en orden inverso
 
+//exposición del orden inverso
+document.write("<h2>ORDEN INVERSO</h2>")
+document.write("<p id = parrafo1> Números del número que ingresaste hasta el 0 </p>");
+
+//mientras el valor del contador sea mayor a 0, imprimir el número Ingresado
+for (let i = nIngresado; i >= 0; i--) {
+  document.write("<p id = parrafo2>",i,"</p>");
+}
 
 
-//6
+//6: Mi problema
