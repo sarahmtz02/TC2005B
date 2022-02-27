@@ -3,6 +3,8 @@
 //pedir un número al usuario
 const nIngresado = prompt("Ingrese un número: ");
 
+document.write("<h2>CUADRADOS Y CUBOS</h2>");
+
 //Cuadrados: mientras que i sea menor o igual al número ingresado, multiplicar el valor de i por sí mismo
 document.write("<p id = parrafo1>Los CUADRADOS de los números del 0 al número que ingresaste son: </p>");
 for (let i = 0; i <= nIngresado; i++) {
@@ -14,6 +16,7 @@ document.write("<p id = parrafo1>Los CUBOS de los números del 0 al numero que i
 for (let i = 0; i <= nIngresado; i++) {
   document.write("<p id = parrafo2>",i*i*i,"</p>");
 }
+document.write("<br>");
 
 //2: Suma de 2 números aleatorios
 
@@ -46,28 +49,78 @@ else {
 }
 
 
-//3
-/*function contador(numeros){
+//3: Contador de números (negativos, ceros y positivos)
+
+const num = [7, 9, 9, 0, -1, 7, -3, -5, 0, -2, 0];
+
+function contador(numeros){
     let neg = 0;
     let cero = 0;
     let pos = 0;
-    for (let i=0; i<numeros.length;i++){
+
+    //ciclo for: por el largo del arreglo, revisar valores
+    for (let i=0; i<=numeros.length;i++){
+
+        //si el valor es menor a 0, añadir un valor al contador de negativos
         if (numeros[i]<0){
-            neg = neg+1;
+            neg++;
         }
+
+        //si el valor es mayor a 0, añadir un valor al contador de positivos
         else if (numeros[i]>0){
-            pos = pos+1;
+            pos++;
         }
-        else{
-            cero = cero+1;
+
+        //si el valor es igual a 0, añadir un valor al contador de ceros
+        else if (numeros[i]==0){
+            cero++;
         }
     }
-    alert("Negativos: " + neg + "Ceros: " + cero + "Positivos: " + pos);
-}
-const num = [7, 9, 9, 0, -1, 7, -3, -5, 0, -2, 0];
-contador(num);*/
 
-//4
+    //imprimir en el documento los resultados
+    document.write("<h2> VALORES DEL ARREGLO (NEGATIVOS, CEROS Y POSITIVOS)</h2>");
+    
+    document.write("<p id = parrafo1> Negativos: </p>");
+    document.write("<p id = parrafo2>",neg,"</p>");
+
+    document.write("<p id = parrafo1> Ceros: </p>");
+    document.write("<p id = parrafo2>",cero,"</p>");
+
+    document.write("<p id = parrafo1> Positivos: </p>");
+    document.write("<p id = parrafo2>",pos,"</p>");
+    document.write("<br>");
+}
+
+contador(num);
+
+//4: Promedios
+
+//declarar valores de los que se va a sacar el promedio y las variables donde se guardarán los datos de las operaciones
+let matriz = [[9,8],[9,7]];
+let suma=0;
+let prom=0;
+
+function promedio(arreglo){
+
+    //a lo largo del arreglo, tomar valores de x
+    for(var i=0; i< arreglo.length; i++) {
+        var x = arreglo[i];
+
+        //sumar cada valor del arreglo
+        for(var j=0; j< x.length; j++) {
+            suma   = suma + x[j];
+        }
+    }
+
+    document.write("<h2>FUNCIÓN PROMEDIO</h2>");
+    document.write("<p id=parrafo1>El promedio del arreglo es: </p>")
+
+    //sacar promedio (dividir la suma entre los 4 valores del arreglo)
+    prom = suma/4;
+
+    document.write("<p id=parrafo2>",prom,"</p>")
+}
+promedio(matriz);
 
 
 //5
