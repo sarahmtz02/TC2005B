@@ -16,3 +16,25 @@ function validar(){
     };
 };
 
+function añadir(){
+    let label_banana = document.getElementById("banana");
+    label_banana.innerHTML = 1;
+    let label_pumpkin = document.getElementById("pumpkin");
+    label_pumpkin.innerHTML = 1;
+    let label_apple = document.getElementById("apple");
+    label_apple.innerHTML = 1;
+    label_buy = document.getElementById("buy");
+    label_buy.innerHTML = "$" + 350;
+};
+
+function eliminar(){
+    let label_banana = document.getElementById("banana");
+    label_banana.innerHTML = 0;
+    let label_pumpkin = document.getElementById("pumpkin");
+    label_pumpkin.innerHTML = 0;
+    let label_apple = document.getElementById("apple");
+    label_apple.innerHTML = 0;
+    label_buy = document.getElementById("buy");
+    label_buy.innerHTML = "$" + 0;
+};
+
