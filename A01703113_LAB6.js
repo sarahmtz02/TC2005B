@@ -9,6 +9,10 @@ function validar(){
     }
 
     else if(txt_contraseña=="" || txt_confirm==""){
-        
+        window.alert("La contraseña no coincide");
     }
-}
+    else if(txt_contraseña == txt_confirm){
+        window.alert("¡La contraseña es correcta!")
+    };
+};
+
