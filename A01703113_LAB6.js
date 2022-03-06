@@ -16,13 +16,41 @@ function validar(){
     };
 };
 
-function añadir(){
+function añadirbanana(){
+    let cantb = 0;
     let label_banana = document.getElementById("banana");
-    label_banana.innerHTML = 1;
+    label_banana.innerHTML = cantb+1;
+    label_buy = document.getElementById("buy");
+    label_buy.innerHTML = "$" + 350;
+};
+
+function añadirpumpkin(){
+    let cantp = 0;
     let label_pumpkin = document.getElementById("pumpkin");
-    label_pumpkin.innerHTML = 1;
+    label_pumpkin.innerHTML = cantp+1;
+    label_buy = document.getElementById("buy");
+    label_buy.innerHTML = "$" + 350;
+};
+
+function añadirapple(){
+    let canta = 0;
     let label_apple = document.getElementById("apple");
-    label_apple.innerHTML = 1;
+    label_apple.innerHTML = canta+1;
+    label_buy = document.getElementById("buy");
+    label_buy.innerHTML = "$" + 350;
+};
+
+/*
+function añadirbanana(){
+    let cantb = 0;
+    let cantp = 0;
+    let canta = 0;
+    let label_banana = document.getElementById("banana");
+    label_banana.innerHTML = cantb+1;
+    let label_pumpkin = document.getElementById("pumpkin");
+    label_pumpkin.innerHTML = cantp+1;
+    let label_apple = document.getElementById("apple");
+    label_apple.innerHTML = canta+1;
     label_buy = document.getElementById("buy");
     label_buy.innerHTML = "$" + 350;
 };
@@ -36,5 +64,25 @@ function eliminar(){
     label_apple.innerHTML = 0;
     label_buy = document.getElementById("buy");
     label_buy.innerHTML = "$" + 0;
+};*/
+
+function eliminarbanana(){
+    let label_banana = document.getElementById("banana");
+    label_banana.innerHTML = 0;
+    label_buy = document.getElementById("buy");
+    label_buy.innerHTML = "$" + 0;
 };
 
+function eliminarpumpkin(){
+    let label_pumpkin = document.getElementById("pumpkin");
+    label_pumpkin.innerHTML = 0;
+    label_buy = document.getElementById("buy");
+    label_buy.innerHTML = "$" + 0;
+};
+
+function eliminarapple(){
+    let label_apple = document.getElementById("apple");
+    label_apple.innerHTML = 0;
+    label_buy = document.getElementById("buy");
+    label_buy.innerHTML = "$" + 0;
+};
