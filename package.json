@@ -4,7 +4,7 @@
   "description": "Json Package Repositorio TC2005B",
   "main": "A01703113_LAB4.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon App.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,11 @@
   "bugs": {
     "url": "https://github.com/sarahmtz02/TC2005B/issues"
   },
-  "homepage": "https://github.com/sarahmtz02/TC2005B#readme"
-
+  "homepage": "https://github.com/sarahmtz02/TC2005B#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  }
 }

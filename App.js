@@ -1,5 +1,4 @@
 const express = require('express');
-const misRutas = require('./routes/routes.js');
 const app = express();
 
 
@@ -8,7 +7,7 @@ app.set('views',__dirname + '/views');
 
 //Home
 app.use('/inicio', (request, response, next) => {
-    response.render("Inicio.ejs");
+    response.render("./labs(A01703113_LAB1.html");
 });
 
 //Middleware
