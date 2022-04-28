@@ -1,10 +1,15 @@
-//routes
+//LAB 12 routes
 const express = require('express');
 const router = express.Router();
+const path = require('path');
 
 const panques = ["Plátano", "Manzana", "Calabaza"];
 const marcas = ["Schar", "Ezekiel", "Pan Gabriel", "Bob's Red Mill"]
 
+
+router.get('/lab', (request, response, next) => {
+    response.sendFile(path.join(__dirname, '..', 'views', 'LAB12.html'));
+});
 
 router.get('/', (request, response, next) => {
     console.log(request.body);
