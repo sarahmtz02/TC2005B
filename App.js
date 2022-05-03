@@ -5,12 +5,18 @@ const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
 
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 const rutas_panques = require('./routes/panques.routes');
+const rutas_labs = require('./routes/lab12.routes')
 const res = require('express/lib/response');
-app.use('/panques', rutas_panques);
+
+/*app.use('/panques', rutas_panques);*/
+app.use('/labs', rutas_labs)
 
 //Middleware
 app.use((request, response, next) => {
@@ -31,10 +37,6 @@ app.use('/hola', (request, response, next) => {
 app.use((request, response, next) => {
     console.log('Otro middleware!');
     response.send('¡Hola mundo!'); //Manda la respuesta
-});
-
-app.get('/milagro', function(req,res){
-    res.sendFile('LAB12.html')
 });
 
 app.use((request, response, next) => {
