@@ -5,6 +5,10 @@ const path = require('path');
 const rutas_panques = require('./routes/panques.routes');
 //const rutas_labs = require('./routes/lab12.routes');
 
+const db = require('./util/database')
+db.execute('SELECT * FROM materiales');
+
+
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 
