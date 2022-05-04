@@ -1,4 +1,4 @@
-//LAB 13: MVC
+//LAB 14: Sesiones y Cookies
 
 const express = require('express');
 const app = express();
@@ -11,8 +11,17 @@ const path = require('path')
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
+
+app.use(session({
+    secret: 'gKNJFYzbZ4FMaXmTbXhB',
+    resave: false,
+    saveUninitialized: false,
+}));
+app.use(cookieParser());
 
 app.use('/panques',rutas_panques);
 app.use('/lab12', rutas_lab12);
