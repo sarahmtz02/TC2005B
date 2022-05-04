@@ -8,12 +8,12 @@ const bodyParser = require('body-parser');
 const rutas_panques = require('./routes/panques.routes')
 const rutas_lab12 = require('./routes/lab12.routes')
 const rutas_usuarios = require('./routes/auth.routes')
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
 const path = require('path')
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
-const cookieParser = require('cookie-parser');
-const session = require('express-session');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
 
@@ -22,11 +22,12 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 }));
+
 app.use(cookieParser());
 
 app.use('/panques',rutas_panques);
 app.use('/lab12', rutas_lab12);
-app.use('/users',rutas_usuarios);
+app.use('/login',rutas_usuarios);
 
 //Middleware
 app.use((request, response, next) => {

@@ -14,7 +14,7 @@ exports.login = (request, response, next) => {
         request.session.usuario = request.body.nombre;
         response.redirect('/panques/');
     } else{
-        response.redirect('/users/login');
+        response.redirect('users/login');
     }
 };
 
