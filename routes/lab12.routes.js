@@ -1,9 +1,15 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path');
+const LAB13Controller = require('../controllers/LAB13_controller');
 
-router.get('/labs', (request, response, next) => {
-    response.sendFile(path.join(__dirname, '..', 'views', 'LAB12.html'));
-});
+
+
+router.get('/LAB12', LAB13Controller.LAB12);
+
+router.get('/', LAB13Controller.inicio);
+
+router.get('/nuevo', LAB13Controller.get_nuevo);
+
+router.post('/nuevo', LAB13Controller.post_nuevo);
 
 module.exports = router;
