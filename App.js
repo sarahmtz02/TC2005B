@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 
 const rutas_panques = require('./routes/panques.routes')
 const rutas_lab12 = require('./routes/lab12.routes')
+const rutas_usuarios = require('./routes/auth.routes')
 const path = require('path')
 
 app.set('view engine', 'ejs');
@@ -25,6 +26,7 @@ app.use(cookieParser());
 
 app.use('/panques',rutas_panques);
 app.use('/lab12', rutas_lab12);
+app.use('/users',rutas_usuarios);
 
 //Middleware
 app.use((request, response, next) => {
