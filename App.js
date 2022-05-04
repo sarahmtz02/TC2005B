@@ -5,18 +5,16 @@ const path = require('path');
 const rutas_panques = require('./routes/panques.routes');
 //const rutas_labs = require('./routes/lab12.routes');
 
-const db = require('./util/database')
-db.execute('SELECT * FROM materiales');
-
-
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/panques', rutas_panques);
-//app.use('/labs', rutas_labs);
+app.use('/labs', rutas_labs);
 
 //Middleware
 app.use((request, response, next) => {
@@ -36,7 +34,9 @@ app.use('/hola', (request, response, next) => {
 
 app.use((request, response, next) => {
     console.log('Otro middleware!');
-    response.send('¡Hola mundo!'); //Manda la respuesta
+    response.status(404)
+    response.send('Error 404. No existe esa Ruta.');
+    ; //Manda la respuesta
 });
 
 app.listen(3000);
